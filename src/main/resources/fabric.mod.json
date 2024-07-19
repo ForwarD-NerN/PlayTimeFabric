@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "playtime",
+  "version": "${version}",
+
+  "name": "PlayTime Fabric",
+  "description": "Port of original PlayTime plugin for Fabric!",
+  "authors": [
+    "F64_Rx",
+    "ForwarD NerN"
+  ],
+  "contact": {
+    "sources": "https://github.com/ForwarD_NerN/PlayTime"
+  },
+
+  "license": "MIT",
+  "icon": "assets/playtime/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ru.nern.playtime.PlayTime"
+    ]
+  },
+  "mixins": [
+    "playtime.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": ">=1.20",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
